@@ -6,7 +6,7 @@ public class Runner {
         book.setID(1);
         book.setName("Name");
         book.setAuthor("Author");
-        book.setPublishing("Author");
+        book.setPublishing("Publishing");
         book.setYear(1999);
         book.setPage(29);
         book.setPrice(19.99);
