@@ -2,71 +2,64 @@ package com.alfa.work1;
 
 public class Book {
 
-    private int Id;
-    private String Name;
-    private String Author;
-    private String Publishing;
-    private int Year;
-    private int Page;
-    private double Price;
+    private int id;
+    private String name;
+    private String author;
+    private String publishing;
+    private int year;
+    private int page;
+    private double price;
 
-    public int getID() {
-        return Id;
-    }
     public String getName() {
-        return Name;
-    }
-    public String getAuthor() {
-        return Author;
-    }
-    public String getPublishing() {
-        return Publishing;
-    }
-    public int getYear() {
-        return Year;
-    }
-    public int getPage() {
-        return Page;
-    }
-    public double getPrice() {
-        return Price;
-    }
-    public void setID(int Id) {
-        this.Id = Id;
+        return name;
     }
     public void setName(String name) {
-        Name = name;
+        this.name = name;
+    }
+    public String getAuthor() {
+        return author;
     }
     public void setAuthor(String author) {
-        Author = author;
+        this.author = author;
+    }
+    public String getPublishing() {
+        return publishing;
     }
     public void setPublishing(String publishing) {
-        Publishing = publishing;
+        this.publishing = publishing;
+    }
+    public int getYear() {
+        return year;
     }
     public void setYear(int year) {
-        Year = year;
+        this.year = year;
+    }
+    public int getPage() {
+        return page;
     }
     public void setPage(int page) {
-        Page = page;
+        this.page = page;
+    }
+    public double getPrice() {
+        return price;
     }
     public void setPrice(double price) {
-        Price = price;
+        this.price = price;
     }
 
-    public Book(){
-    };
-
-    public Book(int Id, String name, String author, String publishing, int year, int page, double price) {
-        this.Id = Id;
-        Name = name;
-        Author = author;
-        Publishing = publishing;
-        Year = year;
-        Page = page;
-        Price = price;
+    public Book(String name, String author, String publishing, int year, int page, double price) {
+        this.name = name;
+        this.author = author;
+        this.publishing = publishing;
+        this.year = year;
+        this.page = page;
+        this.price = price;
+    }
+    public Book() {
+        this("Name", "Author", "Publishing", 1999, 29, 19.99);
     }
 
     public void view(){
-        System.out.println(Id  + " " + Name + " " + Author + " " + Publishing + " " + Year + " " + Page + " " + Price);
+        System.out.println(id  + " " + name + " " + author + " " + publishing + " " + year + " " + page + " " + price);
     }
 }
