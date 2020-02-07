@@ -1,9 +1,12 @@
 package com.alfa.work1;
 
-import static com.alfa.work1.Book.view;
-
 public class Runner {
     public void run(){
-       view();
+        Book book = new Book();
+        Book book1 = new Book(1, "Name", "Author", "Publishing", 1999, 29, 19.99);
+        book.setName("Name1");
+        book.setPrice(1000);
+        book.view();
+        book1.view();
     }
 }
